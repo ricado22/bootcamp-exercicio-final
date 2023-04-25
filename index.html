@@ -13,41 +13,82 @@
             background-color: #CCCCCC;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #FFFFFF;
+            text-align: center;
+            margin: auto;
+            
         }
 
         .container {
-            background-color: #1D0C20;
-            padding: 20px;
+            background-image: linear-gradient(rgb(29, 12, 32), rgb(101, 31, 112));
+            display: flex;
+            padding: 50px;
+            border-radius: 10px;
+            width: 1300px;
+            margin: auto;
+
         }
 
         .sub-container {
-            background-color: #651F71;
-            margin: 30px;
-            padding: 20px;
+            background-image: linear-gradient(rgb(101, 31, 113), rgb(30, 13, 33) );
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            margin: auto;
+            padding: 30px;
+        
         }
 
         .title {
             color: #FECD23;
+            font-size: 60px;
+        }
+
+        .sub-title {
+            font-size: 45px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .paragrafo {
+            padding: 10px;
+            font-size: 32px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
         .esportes {
-            background-color: #3B59EE;
-            margin: 30px;
+            background-image: linear-gradient(rgb(61, 93, 239), rgb(114, 205, 255));
+            flex-direction: column;
+            padding: 80px;
             box-shadow: 0px 0px 0px 10px rgb(38, 56, 221);
-
+            border-radius: 5px;
+            font-size: 20px;
+            
+            
         }
 
         .simulacao {
-            background-color: #3B59EE;
-            margin: 30px;
+            background-image: linear-gradient(rgb(61, 93, 239), rgb(114, 205, 255));
+            padding: 80px;
+            flex-direction: column;
             box-shadow: 0px 0px 0px 10px rgb(38, 56, 221);
+            border-radius: 5px;
+            font-size: 20px;
+            
+            
         }
 
         .estrategia {
-            background-color: #3B59EE;
-            margin: 30px;
+            background-image: linear-gradient(rgb(61, 93, 239), rgb(114, 205, 255));
+            padding: 80px;
+            flex-direction: column;
             box-shadow: 0px 0px 0px 10px rgb(38, 56, 221);
+            border-radius: 5px;
+            font-size: 20px;
+            
+            
         }
+
     </style>
 </head>
 
@@ -55,43 +96,51 @@
     <div class="container">
         <div class="header">
             <div class="title">
-                GAMES LOVERS ENQUETE
+                <b>GAMES LOVERS ENQUETE</b> 
             </div>
-            <div>
+            <div class="paragrafo">
                 Estamos escolhendo nessa enquete os melhores estilos de jogos entre os afixionados por video games.
                 Participe da nossa enquete e escolha os três finalistas!
             </div>
-            <div>
+            <div class="paragrafo">
                 A sua escolha é muito importante para nós.
             </div>
-            <div>
-                No final da enquete iremos sortear um brinde entre os participantes.
+            <div class="paragrafo">
+                No final da enquete iremos sortear um <i><b>brinde</b></i> entre os participantes.
             </div>
             <div class="sub-container">
-                <div>
+                <div class="sub-title">
                     Digite os seus dados e escolha entre os três finalistas!
                 </div>
-                <div>
-                    <input type="text" placeholder="Digite seu nome">
-                    <input type="email" placeholder="Digite seu email">
-                </div>
+
+                <input type="text" placeholder="Digite seu nome">
+                <input type="email" placeholder="Digite seu email">
+
                 <div>
                     <div class="votacao">
                         <div class="esportes">
 
-                            Esportes
+                            <div class="paragrafo">Esportes</div>
 
-                            <button>Votar</button>
+                            <div class="image-group"><object data="bola.svg" type="image/svg+xml"></object></div>
+
+                            <div><button class="button">Votar</button></div>
                         </div>
                         <div class="simulacao">
-                            Simulação
 
-                            <button>Votar</button>
+                            <div class="paragrafo">Simulação</div>
+
+                            <div class="image-group"><object data="aviao.svg" type="image/svg+xml"></object></div> 
+
+                            <div><button class="button">Votar</button></div>
                         </div>
                         <div class="estrategia">
-                            Estratégia
 
-                            <button>Votar</button>
+                            <div class="paragrafo">Estratégia</div>
+
+                            <div class="image-group"><object data="psy.svg" type="image/svg+xml"></object></div> 
+
+                            <div><button class="button">Votar</button></div>
                         </div>
                     </div>
                 </div>
